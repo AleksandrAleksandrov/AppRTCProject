@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2724122130521F00633B58 /* VideoRoomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2724112130521F00633B58 /* VideoRoomController.m */; };
 		1F864D4D212DB50D008993D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F864D4C212DB50D008993D9 /* AppDelegate.swift */; };
 		1F864D4F212DB50D008993D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F864D4E212DB50D008993D9 /* ViewController.swift */; };
 		1F864D52212DB50D008993D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F864D50212DB50D008993D9 /* Main.storyboard */; };
 		1F864D54212DB50F008993D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F864D53212DB50F008993D9 /* Assets.xcassets */; };
 		1F864D57212DB50F008993D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F864D55212DB50F008993D9 /* LaunchScreen.storyboard */; };
+		8ABBD999E28BE97BAD992B4A /* libPods-AppRTCProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5D4A3906524458AA613867 /* libPods-AppRTCProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AE5A4AAD40B7FC44A43D93B /* Pods-AppRTCProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppRTCProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppRTCProject/Pods-AppRTCProject.release.xcconfig"; sourceTree = "<group>"; };
+		19DE50171C886E0BA2D01B7D /* Pods-AppRTCProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppRTCProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppRTCProject/Pods-AppRTCProject.debug.xcconfig"; sourceTree = "<group>"; };
+		1A5D4A3906524458AA613867 /* libPods-AppRTCProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppRTCProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F2724102130521F00633B58 /* AppRTCProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppRTCProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		1F2724112130521F00633B58 /* VideoRoomController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoRoomController.m; sourceTree = "<group>"; };
+		1F2724132130533100633B58 /* VideoRoomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoRoomController.h; sourceTree = "<group>"; };
 		1F864D49212DB50D008993D9 /* AppRTCProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppRTCProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F864D4C212DB50D008993D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F864D4E212DB50D008993D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ABBD999E28BE97BAD992B4A /* libPods-AppRTCProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				1F864D4B212DB50D008993D9 /* AppRTCProject */,
 				1F864D4A212DB50D008993D9 /* Products */,
+				B4B079ADF2A00B2E8E780A19 /* Pods */,
+				57F1310D1D32BD12986BF488 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +71,28 @@
 				1F864D53212DB50F008993D9 /* Assets.xcassets */,
 				1F864D55212DB50F008993D9 /* LaunchScreen.storyboard */,
 				1F864D58212DB50F008993D9 /* Info.plist */,
+				1F2724112130521F00633B58 /* VideoRoomController.m */,
+				1F2724102130521F00633B58 /* AppRTCProject-Bridging-Header.h */,
+				1F2724132130533100633B58 /* VideoRoomController.h */,
 			);
 			path = AppRTCProject;
+			sourceTree = "<group>";
+		};
+		57F1310D1D32BD12986BF488 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A5D4A3906524458AA613867 /* libPods-AppRTCProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4B079ADF2A00B2E8E780A19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19DE50171C886E0BA2D01B7D /* Pods-AppRTCProject.debug.xcconfig */,
+				0AE5A4AAD40B7FC44A43D93B /* Pods-AppRTCProject.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F864D5B212DB50F008993D9 /* Build configuration list for PBXNativeTarget "AppRTCProject" */;
 			buildPhases = (
+				F3E59C3CC63C6B80CCA624ED /* [CP] Check Pods Manifest.lock */,
 				1F864D45212DB50D008993D9 /* Sources */,
 				1F864D46212DB50D008993D9 /* Frameworks */,
 				1F864D47212DB50D008993D9 /* Resources */,
@@ -96,6 +128,7 @@
 				TargetAttributes = {
 					1F864D48212DB50D008993D9 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -130,11 +163,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F3E59C3CC63C6B80CCA624ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppRTCProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F864D45212DB50D008993D9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2724122130521F00633B58 /* VideoRoomController.m in Sources */,
 				1F864D4F212DB50D008993D9 /* ViewController.swift in Sources */,
 				1F864D4D212DB50D008993D9 /* AppDelegate.swift in Sources */,
 			);
@@ -278,10 +333,13 @@
 		};
 		1F864D5C212DB50F008993D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19DE50171C886E0BA2D01B7D /* Pods-AppRTCProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T9EKPAPC4;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppRTCProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -289,6 +347,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aleksandr.aleksandrov.AppRTCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppRTCProject/AppRTCProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,10 +356,13 @@
 		};
 		1F864D5D212DB50F008993D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AE5A4AAD40B7FC44A43D93B /* Pods-AppRTCProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9T9EKPAPC4;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppRTCProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +370,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.aleksandr.aleksandrov.AppRTCProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppRTCProject/AppRTCProject-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
